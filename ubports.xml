@@ -1,4 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="los"
+            fetch="https://github.com/LineageOS"
+            revision="refs/heads/cm-14.1" />
+
+	<!-- Uses ubports gerrit server since halium does not have one yet -->
+	<remote name="hal"
+		fetch="https://github.com"
+		review="http://review.ubports.com"
+		revision="refs/heads/halium-7.1" />
+
+	<remote name="them"
+		fetch="https://github.com/TheMuppets"
+		revision="refs/heads/cm-14.1" />
+
+	<remote name="them2"
+		fetch="https://gitlab.com/The-Muppets"
+		revision="refs/heads/cm-14.1" />
+
+	<remote name="sailfishos"
+		fetch="https://github.com/sailfishos" />
+	
 	<remote name="beidl" fetch="git://github.com/fredldotme" />
 	<remote name="rargente" fetch="git://github.com/Rargente" />
 	<project path="external/gpg" name="android_external_gpg" revision="halium-7.1" remote="beidl" />
